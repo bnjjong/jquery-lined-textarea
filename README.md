@@ -6,23 +6,31 @@
 
 ## Synopsis
 
-> Play simple Tetris.  
-> Just open tetris html file on any browser.
+> Displays a line number to the left of the textarea.   
+> you can easily use if jquery library is loaded.
 
 ## Manual
-- `arrow key` : move the block by arrow key. 
-- `space key` : Directly drop the block down.
+Just create textarea.
+```html
+<textarea id="article"></textarea>
+```
+
+Write code as below.
+```javascript
+ $("#article").linedtextarea({
+   width:'100%', 
+   height:"350px",
+   selectedLine: 10,
+ });
+```
+
+## options
+TODO
 
 ## Screenshot
-> You just click the `start button`.
+![basic-usage](images/basic-usage.gif)
 
-![Tetris](./images/tetris.png)
+automatically `focus` line and apply `color` red.
+![selectedLine](./images/selectedLine.png)
 
 
-
-> You can check your `score` and `level`.   
-> Also you can see the next block in the upper right corner.   
-> When the game level is up, the block `down speed` is up.   
-> Enjoy Playing game.!   
-
-![Tetris](./images/play.png)
